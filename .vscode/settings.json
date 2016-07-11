@@ -1,0 +1,13 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
+{   "editor.fontSize": 16,
+    "editor.wrappingColumn": 100,
+    "editor.formatOnType": true,
+    "editor.mouseWheelZoom": true,
+    "editor.quickSuggestionsDelay": 5,
+    // Настройте сопоставления файлов с языками (например, "*.extension": "html"). У них будет приоритет перед заданными по умолчанию сопоставлениями установленных языков.
+    "files.associations": {},
+    "files.autoSave": "onFocusChange",
+    "php.validate.enable": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}

@@ -1,0 +1,17 @@
+engines:
+  fixme:
+    enabled: true
+  eslint:
+    enabled: false
+  nodesecurity:
+    enabled: true
+  markdownlint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript
+ratings:
+  paths: []
+exclude_paths: []

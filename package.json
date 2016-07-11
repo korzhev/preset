@@ -1,0 +1,43 @@
+{
+  "name": "preset",
+  "description": "Пример использования тестов, линтеров, покрытия и непрерывной интеграции",
+  "version": "0.0.1",
+  "devDependencies": {
+    "chai": "*",
+    "coveralls": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "istanbul": "*",
+    "mocha": "*"
+  },
+  "main": ".js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha",
+    "redis": "sudo docker start telegram-redis",
+    "stop_redis": "sudo docker stop telegram-redis",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "coverage_silenced": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*; true",
+    "lint": "./node_modules/eslint/bin/eslint.js .; true",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "codeclimate": "npm shrinkwrap && sudo codeclimate analyze",
+    "app": "node app.js --role=app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korzhev/preset.git"
+  },
+  "author": "Vladimir Korzhev <amv12dbr9@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korzhev/preset/issues"
+  },
+  "dependencies": {
+    "co": "*",
+    "feedparser": "*",
+    "koa": "*",
+    "minimist": "*",
+    "node-telegram-bot-api": "*",
+    "redis": "*"
+  }
+}
