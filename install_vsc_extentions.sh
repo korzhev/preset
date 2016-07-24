@@ -26,5 +26,7 @@ code --install-extension spywhere.guides
 code --install-extension tanato.vscode-gulp
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension xabikos.ReactSnippets
+code --install-extension sysoev.language-stylus
+code --install-extension vtfn.stylint
 
 sudo chown -R $(whoami) /usr/share/code
